@@ -3,10 +3,9 @@ const fs = require('fs')
 const inquirer = require('inquirer')
 
 // Team profiles
-const manager = require('./manager')
-const engineer = require('./engineer')
-const intern = require('./intern')
-const { type } = require('os')
+const Manager = require('./manager')
+const Engineer = require('./engineer')
+const Intern = require('./intern')
 
 const teamArray = [ ];
 
@@ -81,10 +80,7 @@ const addEmployee = () => {
             type: 'input',
             message: "What school did you go to?", 
         },
-    ])
-}
-
-then(employeeData => { 
+    ]).then(employeeData => { 
     let { name, id, email, role, github, school, confirmAddEmployees } = employeeData;
     let employee;
 
@@ -102,7 +98,17 @@ then(employeeData => {
     if (confirmAddEmployees) {
         return addEmployee(teamArray);
     } else {
-        return teamArray;
+        return;
     }
-})
+});
+}
 
+const renderTeam = () => {
+    let output = '';
+    output += getHTMLHeaderContent();
+    teamArray.forEach( teamMember => output += renderPerson(teamMember))
+    output += getHTMLFooterContent();
+    fs.writeFileSync('./index.html', output)
+}
+
+addManager().then(addEmployee).then(addIntern)
