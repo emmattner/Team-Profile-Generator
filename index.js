@@ -1,8 +1,9 @@
+const 
+
 // node modules
 const fs = require('fs')
 const inquirer = require('inquirer')
 
-// Team profiles
 const Manager = require('./manager')
 const Engineer = require('./engineer')
 const Intern = require('./intern')
@@ -48,7 +49,8 @@ const addEmployee = () => {
         {
             name: 'role',
             type: 'list',
-            message: ['engineer', 'intern']
+            message: 'Please choose the correct role',
+            choices: ['engineer', 'intern']
         },
         {
             name: 'name',
@@ -80,7 +82,9 @@ const addEmployee = () => {
             type: 'input',
             message: "What school did you go to?", 
         },
-    ]).then(employeeData => { 
+    ])
+    
+    .then(employeeData => { 
     let { name, id, email, role, github, school, confirmAddEmployees } = employeeData;
     let employee;
 
