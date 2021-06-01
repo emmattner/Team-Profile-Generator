@@ -1,12 +1,13 @@
-const 
+const indexHTML = require('./index');
 
 // node modules
-const fs = require('fs')
-const inquirer = require('inquirer')
+const fs = require('fs');
+const inquirer = require('inquirer');
 
-const Manager = require('./manager')
-const Engineer = require('./engineer')
-const Intern = require('./intern')
+const Employee = require('./employee');
+const Manager = require('./manager');
+const Engineer = require('./engineer');
+const Intern = require('./intern');
 
 const teamArray = [ ];
 
