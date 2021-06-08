@@ -108,12 +108,25 @@ const addEmployee = () => {
 });
 }
 
-const renderTeam = () => {
-    let output = '';
-    output += getHTMLHeaderContent();
-    teamArray.forEach( teamMember => output += renderPerson(teamMember))
-    output += getHTMLFooterContent();
-    fs.writeFileSync('./index.html', output)
-}
+const writeFile = data => {
+    fs.writeFile('./index.html', data, err => {
+        if (err) {
+            console.log(err);
+            return;
+        } else {
+            console.log("Your team profile has been successfully created! Please check out the index.html")
+        }
+    })
+}; 
 
-addManager().then(addEmployee).then(addIntern)
+addManager()
+.then(addEmployee)
+.then(teamArray => {
+    return generateHTML(teamArray);
+})
+.then(pageHTML => {
+    return writeFile(pageHTML);
+})
+.catch(err => {
+console.log(err);
+});
