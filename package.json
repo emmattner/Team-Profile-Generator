@@ -6,6 +6,7 @@
   "dependencies": {
     "bulma": "^0.9.2",
     "inquirer": "^8.0.0",
+    "jest": "^27.0.5",
     "node": "^16.1.0"
   },
   "devDependencies": {},
