@@ -4,6 +4,7 @@ const generateHTML = require('./src/generateHTML');
 // node modules
 const fs = require('fs');
 const inquirer = require('inquirer');
+const jest = require('jest');
 
 // const Employee = require('./employee');
 const Manager = require('./lib/manager');
@@ -36,12 +37,12 @@ const addManager = () => {
             message: 'Enter managers office number'
         }
     ])
-        .then(managerInput => {
+    .then(managerInput => {
             const { name, id, email, officeNumber } = managerInput;
             const manager = new Manager (name, id, email, officeNumber);
     
             teamArray.push(manager);
-            //console.log(manager);
+            console.log(manager);
         })
     };
     
@@ -74,7 +75,7 @@ const addManager = () => {
                 name: 'github',
                 type: 'input',
                 message: "What is your Github?",
-                when: (input) => input.role === "Engineer", 
+                //when: (input) => input.role === "Engineer", 
             },
             {
                 name: 'school',
@@ -110,7 +111,7 @@ const addManager = () => {
             return teamArray;
         }
     })
-    };
+    };      
     
     const writeFile = data => {
         fs.writeFile('./index.html', data, err => {
