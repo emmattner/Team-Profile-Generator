@@ -1,6 +1,3 @@
-const { TestWatcher } = require('jest');
-const { hasUncaughtExceptionCaptureCallback } = require('process');
-const { inspect } = require('util');
 const employee = require('../lib/employee');
 const Engineer = require('../lib/engineer');
 
@@ -19,5 +16,5 @@ test ('gets engineer github value', () => {
 test('gets role of employee', () => {
     const engineer = new Engineer('Emma', 82, 'emma@emma.com', 'emmattner')
 
-    expect(engineer.getRole()).toEqual("Engineer");
-});
+    expect(engineer.getRole()).toEqual("engineer")
+})
