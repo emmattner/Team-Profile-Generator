@@ -15,8 +15,8 @@ const generateManager = function (manager) {
             
     </div>
     </div>
-    `;
-}
+    `
+};
 
 const generateEngineer = function (engineer) {
     return `
@@ -34,7 +34,7 @@ const generateEngineer = function (engineer) {
         </div>
     </div>
     `
-}
+};
 
 const generateIntern = function (intern) {
     return `
