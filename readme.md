@@ -27,6 +27,9 @@ By using inquirer through your command line the user can add team members to a p
 * NPM
 
 ## Application ScreenShots
+<img width="1177" alt="team-profile-screenshot" src="https://user-images.githubusercontent.com/78684306/125441385-515ad031-a334-4b31-862d-5723737928ac.png">
+<br>
+
 <img width="1364" alt="team-profile" src="https://user-images.githubusercontent.com/78684306/125278904-6ff3bc80-e352-11eb-8c1b-39513fb1f5b1.png">
 
 ![Alt Text](https://media.giphy.com/media/6CQTF1ZdOvb8OBCds7/giphy.gif)
@@ -37,6 +40,8 @@ Emma Mattner
 
 
 ## Deployment Link and Walk Through Video
+https://emmattner.github.io/Team-Profile-Generator/
+<br>
 https://github.com/emmattner/Team-Profile-Generator
 <br>
 https://drive.google.com/file/d/1Xtk7O65x7K2Z820yOkNA5D3cgXCu0mkh/view
