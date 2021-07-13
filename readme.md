@@ -29,7 +29,7 @@ By using inquirer through your command line the user can add team members to a p
 ## Application ScreenShots
 <img width="1364" alt="team-profile" src="https://user-images.githubusercontent.com/78684306/125278904-6ff3bc80-e352-11eb-8c1b-39513fb1f5b1.png">
 <br>
-![Animated GIF-source](https://user-images.githubusercontent.com/78684306/125418657-e68cd21e-d87f-4cd6-98e4-0995bc41f1e1.gif)
+![Alt Text](https://media.giphy.com/media/6CQTF1ZdOvb8OBCds7/giphy.gif)
 
 
 ## Contributors
