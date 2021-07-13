@@ -7,7 +7,7 @@
 * [Usage Information](#usage-information)
 * [Application ScreenShots](#application-screenShots)
 * [Contributors](#contributors)
-* [Deployment Link](#deployment-link)
+* [Deployment Link](#deployment-link-and-walk-through-video)
 * [Questions](#questions)
 
 
@@ -28,14 +28,16 @@ By using inquirer through your command line the user can add team members to a p
 
 ## Application ScreenShots
 <img width="1364" alt="team-profile" src="https://user-images.githubusercontent.com/78684306/125278904-6ff3bc80-e352-11eb-8c1b-39513fb1f5b1.png">
-
+<br>
+<iframe src="https://giphy.com/embed/6CQTF1ZdOvb8OBCds7" width="480" height="300" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/6CQTF1ZdOvb8OBCds7">via GIPHY</a></p>
 
 ## Contributors
 Emma Mattner
 
 
-## Deployment Link
-
+## Deployment Link and Walk Through Video
+https://github.com/emmattner/Team-Profile-Generator
+https://drive.google.com/file/d/1Xtk7O65x7K2Z820yOkNA5D3cgXCu0mkh/view
 
 
 ## Questions
